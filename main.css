@@ -1,0 +1,521 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+p{
+    font-weight: 300;
+    color: #111;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url("../img/1.jpg");
+ 	background-size: cover;
+ 	background-repeat: none;
+ 	height: 100vh;
+     background-attachment: fixed;
+}
+
+.banner .contect{
+    min-width: 90px;
+    text-align: center;
+}
+
+.contect h2{
+    font-size: 3em;
+    letter-spacing: 3px;
+    color: #fff;
+}
+
+.contect span{
+    font-size: 2em;
+    color: #c24478;
+}
+
+.contect p{
+    font-size: 1em;
+    color: #fff;
+    
+}
+
+.contect .btn{
+    font-size: 1em;
+    color: #fff;
+    background-color: #c24478;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    transition: 0.7s;
+}
+
+.contect .btn:hover{
+    letter-spacing: 3px;
+}
+
+header{
+  position: fixed;
+  display: flex;
+  z-index: 10000;
+  width: 100%;
+  top: 0;
+  left: 0;
+  align-items: center;
+  padding: 40px 100px;
+  justify-content: space-between;
+  transform: 0.4s;
+}
+
+header.sticky{
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: 0.7s;
+}
+
+
+header .logo{
+    color: #fff;
+    font-size: 2em;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+header.sticky .logo{
+    color: #111;
+}
+header .logo span{
+    color: #c24478;
+    font-size: 2em;
+}
+
+header .navgation{
+    display: flex;
+    position: relative;
+}
+
+header .navgation {
+    list-style: none;
+    margin-left: 30px;
+    margin-top: 25px;
+}
+
+header .navgation  li a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    margin-left: 25px;
+    
+}
+
+.header .navgation  li a:hover{
+    display: block;
+    color: #c24478;
+}
+
+header.sticky .navgation li a{
+    color: #111;
+}
+
+header .navgation li a:hover{
+    color: #c24478;
+}
+
+section{
+    padding: 100px;
+}
+
+.row{
+    
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+}
+
+.row .col-50{
+    position: relative;
+    width: 48%;
+}
+
+.row .text{
+    margin-top: 15px;
+    color: #111;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+.row .col-50 .img-box{
+    position: relative;
+    min-height: 300px;
+    width: 100%;
+}
+
+.row .col-50 .img-box img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+
+}
+
+.row .col-50 h2{
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.row .col-50 h2 span{
+    color: #c24478;
+}
+
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu .contect{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.menu .contect .box{
+    width: 340px;
+    margin: 20px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 5px rgba(0, 0,0,0.6);
+}
+
+.menu .contect .box .img-box{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    
+}
+
+.menu .contect .box .img-box img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.menu .title-text {
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.menu .title-text span{
+    color: #c24478;
+}
+
+.menu p{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.menu .contect .box .text{
+    padding: 15px 0 5px;
+}
+
+.menu .contect .box .text h3{
+    font-weight: 400;
+    color: #111;
+}
+
+.menu .btn{
+    font-size: 1em;
+    color: #fff;
+    background-color: #c24478;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    transition: 0.7s;
+    margin-left: 350px;
+
+}
+.menu .btn:hover{
+    letter-spacing: 3px;
+}
+
+.expert .contect{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.expert .contect .box{
+    width: 250px;
+    margin: 70px;
+}
+
+.expert .contect .box .img-box{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.expert .contect .box .img-box img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.expert .contect .box .text{
+    padding: 15px 0 5px;
+}
+
+.expert .contect .box .text h3{
+    text-align: center;
+}
+
+.expert .title-text{
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.expert .title-text span{
+    color: #c24478;
+}
+
+.expert p{
+    text-align: center;
+}
+
+.testimonils{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url("../img/5.jpg");
+ 	background-size: cover;
+ 	background-repeat: none;
+ 	height: 100vh;
+     background-attachment: fixed;
+}
+
+.white .title-text,
+.white p{
+  color: #fff;
+}
+
+.testimonils .contect{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.testimonils .contect .box{
+    width: 340px;
+    margin: 20px;
+    padding: 40px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.testimonils .contect .box .img-box{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+..testimonils .contect .box .img-box img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

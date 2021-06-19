@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Responcive web landing page</title>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+<header>
+	
+	<a href="#" class="brand">Travel</a>
+	<div class="menu-btn"></div>
+	<div class="navigation">
+		<div class="navigation-items">
+			<a href="#">Home</a>
+			<a href="#">About</a>
+			<a href="#">Explorer</a>
+			<a href="#">Gallery</a>
+			<a href="#">contact</a>
+		</div>
+	</div>
+
+</header>
+
+<section class="home">
+
+	<video class="video-side active" src="1.mp4"  autoplay muted loop></video>
+	<video class="video-side" src="2.mp4"  autoplay muted loop></video>
+	<video class="video-side" src="3.mp4"  autoplay muted loop></video>
+	<video class="video-side" src="4.mkv"  autoplay muted loop></video>
+
+
+	<div class="content active">
+	<h1>wonderful.<br><span>Island</span></h1>
+	<p>lDespite its small size, Sri Lanka possesses a high level of biodiversity and wildlife resources, and is rated among the 34 biodiversity hotspots in the world. Many species of flora and fauna are indigenous to Sri Lanka. This has made the island a country with the highest rates of biological endemism in the world.</p>
+	<br><a href="#">Read more</a>
+	</div>
+
+	<div class="content">
+	<h1>camping.<br><span>Enjoy</span></h1>
+	<p>lDespite its small size, Sri Lanka possesses a high level of biodiversity and wildlife resources, and is rated among the 34 biodiversity hotspots in the world. Many species of flora and fauna are indigenous to Sri Lanka. This has made the island a country with the highest rates of biological endemism in the world.</p>
+	<br><a href="#">Read more</a>
+	</div>
+
+	<div class="content">
+	<h1>adventure.<br><span>off road</span></h1>
+	<p>lDespite its small size, Sri Lanka possesses a high level of biodiversity and wildlife resources, and is rated among the 34 biodiversity hotspots in the world. Many species of flora and fauna are indigenous to Sri Lanka. This has made the island a country with the highest rates of biological endemism in the world.</p>
+	<br><a href="#">Read more</a>
+	</div>
+
+<div class="content">
+	<h1>road trip.<br><span>together</span></h1>
+	<p>lDespite its small size, Sri Lanka possesses a high level of biodiversity and wildlife resources, and is rated among the 34 biodiversity hotspots in the world. Many species of flora and fauna are indigenous to Sri Lanka. This has made the island a country with the highest rates of biological endemism in the world.</p>
+	<br><a href="#">Read more</a>
+	</div>
+
+	<div class="media-icons">
+		<a href="#"><i class="fa fa-facebook"></i> </a>
+		<a href="#"><i class="fa fa-instagram"></i> </a>
+		<a href="#"><i class="fa fa-twitter"></i> </a>
+		
+	</div>
+	<div class="slider-navigation">
+		<div class="nav-btn"></div>
+		<div class="nav-btn"></div>
+		<div class="nav-btn"></div>
+		<div class="nav-btn"></div>
+	</div>
+	
+</section>
+
+
+
+<script type="text/javascript">
+	
+	const menuBtn = document.querySelector(".menu-btn");
+	const navigation = document.querySelector(".navigation");
+	const contents = document.querySelector(".content");
+
+	menuBtn.addEventListener("click",() => {
+		menuBtn.classList.toggle("active");
+		navigation.classList.toggle("active");
+	});
+
+	const btns = document.querySelectorAll(".nav-btn")
+	const slides = document.querySelectorAll(".video-side")
+
+	var sliderNav = function (manual) {
+		btns.forEach((btn) => {
+		btn.classList.remove("active");	
+		});
+
+		slides.forEach((slide) => {
+		slide.classList.remove("active");	
+		});
+
+		contents.forEach((content) => {
+		content.classList.remove("active");	
+		});
+
+		btns[manual].classList.add("active");
+		slides[manual].classList.add("active");
+		contents[manual].classList.add("active");
+	}
+	btns.forEach((btn,i)=>{
+		btn.addEventListener("click",() =>{
+			sliderNav(i);
+		});
+
+	});
+		
+
+</script>
+ 
+
+
+</body>
+</html>
